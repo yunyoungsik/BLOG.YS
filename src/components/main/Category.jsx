@@ -14,7 +14,7 @@ const getData = async () => {
 export default async function Category({cate}) {
   const data = await getData();
   // console.log(data);
-  console.log(`cate : ${cate}`);
+  // console.log(`cate : ${cate}`);
 
   return (
     <ul className='cate'>
