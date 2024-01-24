@@ -1,0 +1,44 @@
+* {
+    transition: background-color 0.3s, color 0.15s;
+  }
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .light,
+  .dark {
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  #main {
+    width: 100%;
+    background-color: var(--black);
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  @media(max-width: 1280px) {
+    .container {
+      padding: 0 20px;
+    }
+  }
+  
+  .line-2 {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-3 {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }

@@ -1,0 +1,218 @@
+.detail {
+  .detail__inner {
+    .detail__header {
+      width: 100%;
+      text-align: center;
+      padding: 100px 0 50px;
+
+      >h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        font-family: var(--font-nanum);
+        color: var(--white);
+        margin-bottom: 30px;
+      }
+
+      >p {
+        font-size: 0.8rem;
+        font-weight: 700;
+        font-family: var(--font-nanum);
+        color: var(--gray);
+        text-transform: capitalize;
+
+        span {
+          color: var(--white);
+        }
+      }
+    }
+
+    .detail__content {
+      >h3 {
+        width: 100%;
+        border-bottom: 1px solid var(--white05);
+        font-size: 3rem;
+        font-family: var(--font-nanum);
+        font-weight: 700;
+        color: var(--white);
+      }
+
+      .info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+
+        .left {
+          display: flex;
+
+          .profill {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            overflow: hidden;
+
+            >img {
+              object-fit: contain;
+            }
+          }
+
+          .profill__info {
+            >h3 {
+              font-size: 1rem;
+              font-family: var(--font-nanum);
+              font-weight: 700;
+              color: var(--white);
+            }
+
+            >span {
+              font-size: 0.8rem;
+              font-family: var(--font-nanum);
+              color: var(--gray);
+            }
+          }
+        }
+
+        .right {
+          opacity: 0.5; // 투명도
+          display: flex;
+          align-items: center;
+
+          >div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+
+            .icon {
+              width: 20px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 5px;
+
+              path {
+                fill: var(--gray);
+              }
+            }
+
+            >p {
+              font-size: 0.8rem;
+              color: var(--gray);
+              margin: 0;
+            }
+          }
+
+          .date {
+            .icon {
+              path {
+                stroke: var(--gray);
+                fill: transparent;
+              }
+            }
+          }
+        }
+
+        @media(max-width: 399px) {
+          flex-direction: column;
+          align-items: flex-start;
+
+          .left {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .content {
+        width: 100%;
+        border-bottom: 1px solid var(--white05);
+        margin: 10px 0 0;
+
+        >p {
+          min-height: 300px;
+          font-size: 1rem;
+          font-family: var(--font-nanum);
+          color: var(--white);
+        }
+
+        .likeBtn {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          >button {
+            font-size: 1rem;
+            color: var(--gray);
+            display: flex;
+            padding: 10px 20px;
+            border: 2px solid var(--white15);
+            border-radius: 20px;
+            background-color: transparent;
+            transition: all 0.3s;
+            cursor: pointer;
+
+            >svg {
+              width: 20px;
+              height: 20px;
+              margin-right: 5px;
+
+              path {
+                fill: var(--gray);
+                transition: all 0.3s;
+              }
+            }
+
+            &:hover {
+              color: #fff;
+              background-color: var(--blue);
+
+              >svg {
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+          }
+        }
+
+        .btn {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          margin: 10px 0;
+
+          >button {
+            background-color: transparent;
+            cursor: pointer;
+          }
+
+          >button,
+          >a {
+            margin: 20px 0 0 10px;
+            font-size: 0.8rem;
+            font-family: var(--font-nanum);
+            font-weight: 900;
+            color: var(--gray);
+            text-align: center;
+            display: block;
+            border: 2px solid var(--white15);
+            border-radius: 25px;
+            padding: 10px 30px;
+            transition: all 0.3s;
+
+            &:hover {
+              color: #fff;
+              background-color: var(--blue);
+            }
+          }
+
+          @media(max-width: 399px) {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

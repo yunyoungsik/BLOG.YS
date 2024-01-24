@@ -1,0 +1,150 @@
+.login {
+  min-height: 900px;
+
+  .login__header {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0 50px;
+
+    h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      font-family: var(--font-nanum);
+      color: var(--white);
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 0.8rem;
+      font-family: var(--font-nanum);
+      color: var(--gray);
+    }
+  }
+
+  .login__form {
+    width: 100%;
+
+    fieldset {
+      width: 100%;
+      border: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .id,
+      .pass {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        >input {
+          font-size: 1rem;
+          font-family: var(--font-nanum);
+          font-weight: 700;
+          width: 300px;
+          height: 50px;
+          padding: 10px;
+          margin-bottom: 10px;
+          background-color: #fff;
+          border: 1px solid var(--white30);
+
+          &:focus {
+            outline: 3px solid var(--white30);
+          }
+
+          @media(max-width: 339px) {
+            width: 100%;
+          }
+        }
+      }
+
+      .btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        >button {
+          font-size: 1rem;
+          font-family: var(--font-nanum);
+          font-weight: 900;
+          color: #fff;
+          width: 300px;
+          height: 50px;
+          background-color: var(--blue);
+          cursor: pointer;
+          transition: all 0.3;
+
+          &:hover {
+            box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.15);
+          }
+
+          @media(max-width: 339px) {
+            width: 100%;
+          }
+        }
+      }
+
+      .snsLogin {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        >button {
+          font-size: 1rem;
+          font-family: var(--font-nanum);
+          font-weight: 700;
+          color: var(--white);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 300px;
+          height: 50px;
+          border: 2px solid var(--white30);
+          border-radius: 50px;
+          background-color: transparent;
+          margin-top: 10px;
+          cursor: pointer;
+          transition: all 0.3s;
+
+          &:hover {
+            color: var(--black);
+            background-color: var(--white);
+          }
+
+          &:first-child {
+            margin-top: 20px;
+          }
+
+          svg {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+          }
+
+          @media(max-width: 339px) {
+            width: 100%;
+          }
+        }
+
+        .github {
+          svg {
+            fill: var(--white);
+            transition: all 0.3s;
+          }
+
+          &:hover {
+            svg {
+              fill: var(--black);
+            }
+          }
+        }
+      }
+    }
+  }
+}
