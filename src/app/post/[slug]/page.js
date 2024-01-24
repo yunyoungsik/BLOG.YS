@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import styles from './page.module.scss'
 import moment from 'moment'
+import SideBar from '@/components/post/SideBar'
+import CommentList from '@/components/comment/CommentList'
 
 const getData = async (slug) => {
   const res = await fetch(`http://localhost:3000/api/post/${slug}`, {
@@ -83,8 +85,9 @@ export default async function page({ params }) {
             </div>
           </div>
         </div>
-        {/* <CommentList /> */}
+        <CommentList />
       </div>
+      <SideBar />
     </main>
   )
 }

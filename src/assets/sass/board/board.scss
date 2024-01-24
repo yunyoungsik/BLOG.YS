@@ -1,0 +1,47 @@
+.detail__sideBar {
+  width: 250px;
+  position: absolute;
+  right: 1rem;
+  top: 20%;
+  transform: translateY(-50%);
+  border: 1px solid var(--white30);
+  background-color: var(--white15);
+  > .comment,
+  > .post {
+    li:first-child {
+      padding: 5px;
+      h3 {
+        font-size: 1.2rem;
+        font-family: var(--font-nanum);
+        font-weight: 700;
+        color: var(--gray);
+      }
+    }
+    li {
+      padding: 0 5px;
+      a {
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        font-family: var(--font-nanum);
+        color: var(--gray);
+        p {
+          padding-right: 5px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-wrap: normal;
+          white-space: nowrap;
+        }
+        span {
+          font-size: 0.8rem;
+          color: var(--black);
+          border-radius: 0.3rem;
+          background-color: var(--gray);
+          padding: 0 0.3rem;
+        }
+      }
+    }
+  }
+  > .comment {
+  }
+}

@@ -1,4 +1,5 @@
 .comment__list {
+  margin-top: 30px;
   ul {
     column-count: 3;
     column-gap: 20px;
@@ -6,11 +7,11 @@
       break-inside: avoid-column;
       min-width: 100px;
       padding: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      border: 1px solid var(--white15);
       border-radius: 30px;
       margin-bottom: 20px;
       &:hover {
-        background-color: rgba(255, 255, 255, 0.01);
+        background-color: var(--white05);
       }
       .comment__top {
         display: flex;
@@ -78,7 +79,7 @@
 }
 
 .comment__write {
-  background-color: rgba(255, 255, 255, 0.01);
+  background-color: var(--white05);
   > form {
     .comment__top {
       display: flex;
@@ -138,9 +139,8 @@
       background-color: transparent;
       resize: none;
       &:focus {
-        padding: 10px;
-        outline: 3px solid rgba(255, 255, 255, 0.15);
-        background-color: rgba(255, 255, 255, 0.01);
+        outline: 1px solid var(--white15);
+        background-color: var(--white05);
       }
     }
   }

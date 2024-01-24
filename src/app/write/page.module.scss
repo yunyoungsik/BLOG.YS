@@ -1,0 +1,85 @@
+.write {
+  .write__inner {
+    .write__header {
+      width: 100%;
+      text-align: center;
+      padding: 100px 0 50px;
+      h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        font-family: var(--font-nanum);
+        color: var(--white);
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 0.8rem;
+        font-family: var(--font-nanum);
+        color: var(--gray);
+      }
+    }
+
+    .write__form {
+      fieldset {
+        border: 0;
+        .cate {
+          margin-bottom: 10px;
+          select {
+            font-size: 1rem;
+            font-family: var(--font-nanum);
+            font-weight: 700;
+            background-color: var(--white);
+            padding: 10px 20px;
+            &:focus {
+              outline: 3px solid rgba(255, 255, 255, 0.3);
+            }
+          }
+        }
+        .title {
+          input {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-family: var(--font-nanum);
+            &:focus {
+              outline: 3px solid rgba(255, 255, 255, 0.3);
+            }
+          }
+        }
+        .content {
+          textarea {
+            width: 100%;
+            min-height: 400px;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            font-family: var(--font-nanum);
+            resize: none;
+            &:focus {
+              outline: 3px solid rgba(255, 255, 255, 0.3);
+            }
+          }
+        }
+        .btn {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          button {
+            font-size: 1rem;
+            font-family: var(--font-nanum);
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+              color: var(--white);
+              background-color: var(--blue);
+            }
+          }
+        }
+      }
+    }
+  }
+}

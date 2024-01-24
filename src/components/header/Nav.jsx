@@ -12,8 +12,8 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="/notice">
-            NOTICE
+          <Link href="/post">
+            POST
           </Link>
         </li>
         <li>
