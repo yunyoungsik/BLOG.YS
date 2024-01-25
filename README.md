@@ -8,6 +8,8 @@ npm install prisma
 npm install @prisma/client
 npm install @auth/prisma-adapter
 npm install moment
+npm install react-quill
+npm install swr
 ```
 ```
 npx prisma init --datasource-provider mongodb   //prisma 파일 생성

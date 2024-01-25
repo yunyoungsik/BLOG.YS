@@ -11,9 +11,7 @@ export default function Card({item}) {
       <h3 className="line-2">
         {item.title}
       </h3>
-      <p className="line-3">
-        {item.desc}
-      </p>
+      <p className="line-3" dangerouslySetInnerHTML={{ __html: item.desc }} />
       <div className='info'>
         <span className='line'></span>
         <div className='date'>

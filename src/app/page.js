@@ -8,7 +8,7 @@ export default function Home({searchParams}) {
   // console.log(cate)
 
   return (
-    <main id='main'>
+    <main id='main' className='home'>
       <Info cate={cate} />
       <CardList page={page} cate={cate} />
     </main>

@@ -18,7 +18,7 @@ export default async function Category({cate}) {
 
   return (
     <ul className='cate'>
-      <li className={!cate && 'active'}><Link href="/">All</Link></li>
+      <li className={cate === undefined ? 'active' : ''}><Link href="/">All</Link></li>
       {data.map((item) => (
         <li key={item.id} className={cate === item.slug ? 'active' : ''}><Link href={`?cate=${item.slug}`}>{item.slug}</Link></li>
       ))}

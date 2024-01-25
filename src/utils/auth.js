@@ -7,6 +7,8 @@ import FacebookProvider from "next-auth/providers/facebook"
 import KakaoProvider from "next-auth/providers/kakao"
 import NaverProvider from "next-auth/providers/naver"
 
+import { getServerSession } from "next-auth"
+
 export const authOptions = {
     adapter: PrismaAdapter(prisma),
     providers: [
@@ -37,3 +39,5 @@ export const authOptions = {
         })
     ],
 }
+
+export const getAuthSession = () => getServerSession(authOptions);
